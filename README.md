@@ -13,3 +13,8 @@ Note: Change the truffle congig.js in case you want to use a different compiler 
 
 #### in the truffle console run:
 `> migrate`
+
+
+>To interact with the contract via truffle console, instantiate the contract, ex:
+`var contract = Fundme.deployed()`
+`contract.fund({value:"5000000000000000000"})` // 5 eth = 5 * 10  ** 18 in wei
